@@ -15,7 +15,7 @@ button{
 button.reset {
     font-size: 70px;
     padding: 10px 20px;
-    color:red;
+    color:rgb(217, 255, 0);
 }
 
 .body {
