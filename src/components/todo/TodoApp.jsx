@@ -5,7 +5,10 @@ import AuthenticatedRoute from './AuthenticatedRoute.jsx'
 import LoginComponent from './LoginComponent.jsx'
 import ListTodosComponent from './ListTodosComponent.jsx'
 import HeaderComponent from './HeaderComponent.jsx'
-
+import FooterComponent from './FooterComponent.jsx'
+import LogoutComponent from './LogoutComponent.jsx'
+import ErrorComponent from './ErrorComponent.jsx'
+import WelcomeComponent from './WelcomeComponent.jsx'
 
 
 class TodoApp extends Component{
@@ -57,30 +60,30 @@ class TodoApp extends Component{
 // }    
 
 
-class FooterComponent extends Component{
-    render(){
-        return(
-            <footer className="footer">
-                <span className="text-muted">All Rights Reserved 2021 @HongSDE</span>
+// class FooterComponent extends Component{
+//     render(){
+//         return(
+//             <footer className="footer">
+//                 <span className="text-muted">All Rights Reserved 2021 @HongSDE</span>
             
-            </footer>
-        )
-    }
-}
-class LogoutComponent extends Component{
-    render(){
-        return(
-            <>
-            <div>
-                <h1>You are logged out</h1>
-                <div className="container">
-                    Thanks for using our Application.
-                </div>
-            </div>
-            </>
-        )
-    }
-}
+//             </footer>
+//         )
+//     }
+// }
+// class LogoutComponent extends Component{
+//     render(){
+//         return(
+//             <>
+//             <div>
+//                 <h1>You are logged out</h1>
+//                 <div className="container">
+//                     Thanks for using our Application.
+//                 </div>
+//             </div>
+//             </>
+//         )
+//     }
+// }
 // class ListTodosComponent extends Component{
 //     constructor(props){
 //         super(props)
@@ -127,23 +130,23 @@ class LogoutComponent extends Component{
 //         )    
 //     }
 // }
-class WelcomeComponent extends Component{
-    render(){
-        return (
-            <>
-                <h1>Welcome!</h1>
-                <div class ="container">
-                Welcome {this.props.match.params.name}. You can manage your todos <Link to="/todos">here</Link>.
-                </div>
-            </>
-        )
-    }
-}
-function ErrorComponent(){
+// class WelcomeComponent extends Component{
+//     render(){
+//         return (
+//             <>
+//                 <h1>Welcome!</h1>
+//                 <div class ="container">
+//                 Welcome {this.props.match.params.name}. You can manage your todos <Link to="/todos">here</Link>.
+//                 </div>
+//             </>
+//         )
+//     }
+// }
+// function ErrorComponent(){
     
-    return <div>An error ocurred. Pls contact admin</div>
+//     return <div>An error ocurred. Pls contact admin</div>
     
-}
+// }
 // class LoginComponent extends Component{
 //     constructor(props){
 //         super(props)
