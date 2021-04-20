@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import AuthenticationService from './AuthenticationService.js'
 function ErrorComponent(){
     

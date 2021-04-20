@@ -1,3 +1,5 @@
+import TodoDataService from "../../api/todo/TodoDataService";
+
 class AuthenticationService{
     registerSuccessfulLogin(username, password){
         console.log('registerSuccessfulLogin')
@@ -11,6 +13,12 @@ class AuthenticationService{
         let user = sessionStorage.getItem('authenticatedUser')
         if (user ===null) return false
         return true
+    }
+    getLoggedInUserName(){
+        let user = sessionStorage.getItem('authenticatedUser')
+       if (user ===null) return 'empty'
+        return user
+        
     }
 }
 export default new AuthenticationService()
